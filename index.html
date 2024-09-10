@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+<style>
+  nav{
+    font-size: 20px;
+    background-color: aqua;
+
+  }
+  nav ul{
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li{
+    cursor: pointer;
+    padding: 10px;
+    flex: auto;
+    text-align: center;
+
+  }
+  nav ul li:hover{
+    background-color: chocolate;
+    color: white;
+      }
+      @media all and (max-width:600px) {
+        nav ul{
+          flex-direction:column;
+          display: flex;
+          align-items: center;
+        }
+nav ul li{
+  text-align: center;
+  display: flex;
+}
+      }
+
+</style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+</body>
+</html>
